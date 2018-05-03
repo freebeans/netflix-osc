@@ -1,0 +1,26 @@
+{
+  "name": "netflix-osc",
+  "version": "1.0.0",
+  "description": "With both an OSC and a websocket server, bridges OSC messages to control Netflix playback on the browser.",
+  "main": "index.js",
+  "scripts": {
+    "start": "forever start -a --uid \"netflix-osc\"  index.js",
+    "stop": "forever stop netflix-osc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freebeans/netflix-osc"
+  },
+  "keywords": [
+    "node",
+    "osc",
+    "netflix",
+    "websocket"
+  ],
+  "author": "Filipe Nicoli",
+  "license": "MIT",
+  "dependencies": {
+    "node-osc": "^2.1.0",
+    "websocket": "^1.0.26"
+  }
+}
